@@ -6,9 +6,9 @@ from database.umlsdb import db, MRCONSO, MRDEF, MRREL, MRSTY, MRDOC, MRHIER, MRX
 app = Flask(__name__)
 
 # Configuration for the first MySQL database connection
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://samuel:samore@localhost:3363/umlsdb'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://username:password@localhost:3363/umlsdb'
 app.config['SQLALCHEMY_BINDS'] = {
-    'db2': 'mysql+pymysql://samuel:samore@localhost:3363/rxdb'
+    'db2': 'mysql+pymysql://username:password@localhost:3363/rxdb'
 }
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
